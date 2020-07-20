@@ -1,0 +1,62 @@
+		/* 구글 폰트 가져와서 설치 */
+		@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+		/* 구글 폰트 적용하는 방법 */
+		body {
+			font-family: 'Jeju Gothic', sans-serif;
+			background-color: gray;
+		}
+
+		h1 {
+			padding: 10px;
+			margin: 0px;
+			text-align: center;
+			/* 글자 가운데 정렬 */
+		}
+
+		a {
+			text-decoration: none;
+			/* 밑줄을 없애는 거에요 */
+
+			color: black;
+		}
+
+		li {
+			padding-bottom: 10px;
+			font-size: 20px;
+			/* 글자 크기 */
+		}
+
+		.outdiv {
+			border-top: 5px blue outset;
+			display: grid;
+			grid-template-columns: 200px 1fr;
+			background-color: LightCyan;
+		}
+
+		.seconddiv {
+			border-right: 5px blue outset;
+			padding-right: 10px;
+		}
+
+		.thirddiv {
+			padding-left: 10px;
+		}
+
+		p {
+			font-size: 18px;
+		}
+
+		.right {
+			text-align: right;
+		}
+ 
+  	@media(max-width: 600px) {
+
+			body {
+				background-color: yellow;
+			}
+			.outdiv {
+        border-top:none;
+        grid-template-columns:none;
+			}
+		}
